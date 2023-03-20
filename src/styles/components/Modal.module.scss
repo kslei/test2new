@@ -1,0 +1,123 @@
+.modal {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  font-family: "Montserrat";
+  left: calc(50% - 938px / 2);
+  padding: 20px 0;
+  width: 938px;
+  min-height: 100px;
+  background-color: #FFFFFF;
+  z-index: 5;
+}
+.wrapper {
+  width: 792px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 385px;
+  
+}
+.title {
+  
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 23.93px 0;
+}
+.table {
+  width: 100%;
+  background-color: #f7f7f7;
+  border-radius: 6px;
+  margin-bottom: 24px;
+}
+.header {
+  width: 100%;
+  padding: 6px 0;
+  border-bottom: 1.21px solid #4CA8F9;
+  &__title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1.21px solid #4CA8F9;  
+}
+.latency, .download {
+  width: 50%;
+  height: 32.67px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0em;
+  span {
+    text-decoration: underline;
+    margin-left: 10px;
+  }
+}
+.download {
+  border-left: 1.21px solid #4CA8F9;
+}
+.video {
+  width: 100%;
+  height: 32.67px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 13px;
+  letter-spacing: 0em;
+  span {
+    text-decoration: underline;
+    margin-left: 10px;
+  }
+}
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+    //background-position: center;
+    //background-repeat: no-repeat;
+    //background-size: contain;
+  }
+}
+.close {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: url("../../images/Files/close.png") center/contain no-repeat;
+  top: 18px;
+  right: 18px;
+  &:hover {
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,34 @@
+.mans {
+  position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 7.73%;
+  //z-index: 2;
+  &_1 {
+    width: 21.5%;
+  }
+  &_2 {
+    width: 25.5%;
+    &:hover~.mans_1 {
+        background: no-repeat center/contain url("../../images/Files/pipl 13_active.png");
+        transition: 1s;
+    }
+  }
+  &_3 {
+    width: 29.3%;
+    &:hover ~ .mans_1, &:hover ~ .mans_2 {
+      background: no-repeat center/contain url("../../images/Files/pipl 13_active.png");
+      transition: 1s;
+    }
+  }
+  &_1, &_2, &_3 {
+    aspect-ratio: 27/50;
+    background: no-repeat center/contain url("../../images/Files/pipl 13.png");
+    &:hover {
+      background: no-repeat center/contain url("../../images/Files/pipl 13_active.png");
+      transition: 1s;
+    }
+  }
+}
